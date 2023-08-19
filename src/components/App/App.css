@@ -20,6 +20,17 @@ h1 {
 h1 .highlight {
   color: #6c41ec;
 }
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-top: 50px;
+}
 
 h2 {
   font-family: 'Poppins', sans-serif;

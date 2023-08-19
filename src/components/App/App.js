@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import "./App.css";
-
+import logo from './android-chrome-192x192.png'
 import Playlist from "../Playlist/Playlist";
 import SearchBar from "../SearchBar/SearchBar";
 import SearchResults from "../SearchResults/SearchResults";
@@ -49,6 +49,9 @@ const App = () => {
         Ja<span className="highlight">mmm</span>ing
       </h1>
       <div className="App">
+      <div className="logoContainer">
+      <img src={logo} alt="logo" className="logo"/>
+      </div>
         <SearchBar onSearch={search} />
         <div className="App-playlist">
           <SearchResults searchResults={searchResults} onAdd={addTrack} />
